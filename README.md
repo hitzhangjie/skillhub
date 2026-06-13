@@ -49,11 +49,24 @@ make install      # 编译并安装到 $GOPATH/bin
 
 #### 直接下载二进制（推荐）
 
+| 平台     | 架构                  | 下载                                                                                                                                                               |
+| -------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Linux    | amd64                 | [skillhub-linux-amd64](https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-linux-amd64)                                                      |
+| Linux    | arm64                 | [skillhub-linux-arm64](https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-linux-arm64)                                                      |
+| macOS    | amd64 (Intel)         | [skillhub-darwin-amd64](https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-darwin-amd64)                                                    |
+| macOS    | arm64 (Apple Silicon) | [skillhub-darwin-arm64](https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-darwin-arm64)                                                    |
+| Windows  | amd64                 | [skillhub-windows-amd64.exe](https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-windows-amd64.exe)                                          |
+| Windows  | arm64                 | [skillhub-windows-arm64.exe](https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-windows-arm64.exe)                                          |
+
 ```bash
-# 下载最新版本（替换为实际发布地址）
+# 示例：下载 Linux amd64 版本
 curl -L -o skillhub https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-linux-amd64
 chmod +x skillhub
 sudo mv skillhub /usr/local/bin/
+
+# 下载后验证 SHA256 校验和
+curl -L -o skillhub-linux-amd64.sha256 https://github.com/hitzhangjie/skillhub/releases/latest/download/skillhub-linux-amd64.sha256
+sha256sum -c skillhub-linux-amd64.sha256
 ```
 
 ### 启用 Shell 自动补全
