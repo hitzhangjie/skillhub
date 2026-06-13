@@ -1,6 +1,6 @@
 BINARY=skillhub
 # Default CLI version; override with `make VERSION=1.2.3` or `VERSION=1.2.3 make`.
-VERSION ?= 0.0.1
+VERSION ?= 0.0.2
 GOPATH=$(shell go env GOPATH)
 LDFLAGS=-ldflags="-s -w -X main.Version=${VERSION}"
 
