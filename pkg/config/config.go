@@ -25,7 +25,7 @@ const (
 // Defaults
 const (
 	DefaultCLIHome        = "~/.skillhub"
-	DefaultInstallRoot    = "./skillshub"
+	DefaultInstallRoot    = "~/.skillhub/skills"
 	DefaultEnterpriseHost = "https://api.skillhub.cn"
 
 	LockfileName        = ".skills_store_lock.json"
